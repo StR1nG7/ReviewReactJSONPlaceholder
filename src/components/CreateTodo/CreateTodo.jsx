@@ -17,11 +17,11 @@ const CreateTodo = ({ show, addTodo }) => {
 	const createTodo = (e) => {
 		e.preventDefault();
 		const newTodo = {
-			...todo,
 			id: Date.now(),
+			...todo,
 		};
-		setTodo({ ...todo, id: "", title: "" });
 		addTodo(newTodo);
+		//setTodo({ ...todo, title: "" });
 	};
 
 	return (

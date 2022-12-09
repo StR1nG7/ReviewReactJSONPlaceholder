@@ -20,8 +20,8 @@ const Home = () => {
 	};
 
 	const handleCreate = async (todo) => {
-		const todos = await createTodo(todo);
-		setTodos((prevState) => [todos, ...prevState]);
+		await createTodo(todo);
+		setTodos((prevState) => [todo, ...prevState]);
 	};
 
 	const handleDelete = async (id) => {
