@@ -1,0 +1,35 @@
+.todo {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    position: relative;
+}
+
+.completed {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.completedText {
+    color: #00b0ff;
+}
+
+.formControl {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
