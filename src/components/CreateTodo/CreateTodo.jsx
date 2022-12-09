@@ -21,7 +21,7 @@ const CreateTodo = ({ show, addTodo }) => {
 			...todo,
 		};
 		addTodo(newTodo);
-		//setTodo({ ...todo, title: "" });
+		setTodo({ ...todo, title: "" });
 	};
 
 	return (
